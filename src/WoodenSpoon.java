@@ -51,4 +51,20 @@ public int getAge() {
         return age;
 }
 
+public void setGender(char gender) {
+
+        String gender1 = gender + "";
+        if (!gender1.equalsIgnoreCase("m") || !gender1.equalsIgnoreCase("f")) {
+
+            throw new RuntimeException("another gender is not support !!!");
+        }
+
+        this.gender = gender;
+}
+
+public char getGender() {
+
+        return gender;
+}
+
 }
